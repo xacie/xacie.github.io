@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("toa-heftiba-sbS5YHctZog-unsplash.jpg") ;
+	background-position: center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	height: 100%;
+
+}
+
+.nav {
+	background-color:rgba(239,239,239,0.3);
+	box-shadow: 20px 10px 40px rgba(0,0,0,0.4);
+	border-radius: 30px;
+	border-top: 1px solid rgba(249,249,249,1);
+	border-left: 1px solid rgba(249,249,249,1);
+	background-size: cover;
+	margin: 50px;
+    backdrop-filter: blur(13px); 
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: #521214;
+}
+
+.nav .blur .content img {
+	float: left;
+	margin: 50px 60px;
+	width: 2%;
+}
+.nav .blur .content ul {
+	float: right;
+	display: flex;
+	margin: 50px 60px ;
+}
+ul h4 {
+	margin-top: 8px;
+	margin-left: 70px;
+	color:#521214;
+	font-family: 'Prompt', sans-serif;
+	font-weight:900;
+	font-size: 12pt;
+}
+ul h4:hover {
+	text-shadow:  5px 5px 20px #521214 ;
+}
+.content:after {
+    clear: both;
+	content:"";
+    display: block;
+    width: 0px;
+    height: 0px;
+}
+.noidung1 {
+	margin: 100px;
+}
+.noidung1 h5 {
+	color:#521214;
+	opacity: 0.7;
+	font-size: 11.5pt;
+	font-weight:bolder;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	padding: 15px;
+	animation-name:nhay  ;
+    animation-duration: 7s;  
+    animation-fill-mode: forwards;
+}
+.noidung1 h1 {
+	color:aliceblue !important;
+	opacity: 1;
+	font-size: 60pt;
+	font-family: 'Prompt', sans-serif; 
+	position: relative;
+    animation-name:truot  ;
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;
+	width:240px;
+	cursor:cell;
+}
+.noidung1 h1:hover {
+	text-shadow: 0px 0px 10px #521214,
+		0 0 50px #521214,
+		0 0 10px #521214,
+		0 0 20px #e2dad4,
+		0 0 40px #521214;
+}
+@keyframes truot {
+  from {left: 0; opacity: 0;}
+  to   {left: 50%; transform: translateX(-50%); opacity: 1;}
+}
+.noidung2 {
+	padding-bottom: 50px;
+	display: block;
+}
+.noidung2 h4 {
+	width:20px;
+}
+
+@keyframes nhay {
+  from {opacity: 0;}
+  to   {opacity:1 ;}
+}
+@media only screen and (max-width: 768px){
+	body {
+		background-size: cover;
+		height: 100%;
+		background-repeat: no-repeat;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.nav {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	backdrop-filter: blur(14px); 
+	}
+	.blur {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+ .nav .blur .content img {
+	width: 10%;
+	position: relative;
+	top: 35px;
+	left: 50%;
+	transform: translateX(-50%);	
+}
+.nav .blur .content h4 {
+	text-align: center;
+	position: relative;
+	top: 20px;
+	margin: 15px;
+	font-size: 9pt;
+}
+.nav .blur .noidung1 {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.nav .blur .noidung1 h5 {
+	color:#521214;
+	padding-bottom: 16px;
+	opacity: 0.9;
+	font-size: 8pt;
+	font-weight:bolder;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+.nav .blur .noidung1 h1 {
+	color:#521214;
+	padding-bottom: 16px;
+	opacity: 1;
+	font-size: 34pt;
+	font-family: 'Prompt', sans-serif; 
+	position: relative;
+}
+.noidung2 {
+	margin:0px 10px;
+	pading-bottom: 0px;
+}
+	.noidung2 ul {
+		display: flex;
+		justify-content: center;
+	}
+.noidung2 h4 {
+	margin: 5px 10px;
+	
+}
+.nav {
+	padding: 1px;
+	margin: 10px;
+}
+ul h4:hover {
+	text-shadow:  5px 5px 20px #521214 ;
+}
+.nav .blur .content img {
+	float:none;
+	margin: 0;
+}
+.nav .blur .content ul {
+	float: none;
+	display:block ;
+}
+	.content:after {
+    clear: none;
+	content:"";
+    display:none;
+    width: 0px;
+    height: 0px;
+}
+}
+
+
+
+
+
+
+

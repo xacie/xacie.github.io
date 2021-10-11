@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("daoudi-aissa-Pe1Ol9oLc4o-unsplash.jpg");
+	background-size:cover;
+	
+}
+.nav {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin: 30px;
+	position: relative;
+	
+}
+.abc {
+	position: fixed;
+	font-family: 'Prompt', sans-serif !important;
+	font-size: 11pt !important;
+}
+a {
+	text-decoration: none;
+	color: #521214;
+	cursor:cell;
+}
+
+.nav h5 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 8pt;
+}
+.info {
+	font-family: 'Prompt', sans-serif !important;
+	font-size: 11pt !important;
+	color: #521214;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	
+}
+.dropdown {
+	position:relative;
+	
+}
+.dropdown ul {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	display:none;
+	color: #521214;
+	padding-right: 5px;
+}
+.dropdown ul h5 {
+	padding-top: 13px;
+	font-size: 10pt;
+}
+.dropdown:hover ul {
+	display: block;
+}
+.gioithieu {
+	position: relative;
+	width: 600px;
+	height: 330px;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	transition: 1s;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 70px;
+	margin-bottom: 60px;
+	backdrop-filter: blur(14px); 
+	
+}
+.gioithieu .hinhtron {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	overflow: hidden;
+	backdrop-filter: blur(14px);
+	
+	
+}
+.gioithieu .hinhtron::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(255,255,255,0.53);
+	clip-path: circle(100px at center);
+	transition: 1s;
+	box-shadow: 20px 10px 40px rgba(0,0,0,0.7);
+	backdrop-filter: blur(14px);
+	border-top: 1px solid rgba(249,249,249,1);
+	border-left: 1px solid rgba(249,249,249,1);
+}
+.gioithieu:hover .hinhtron:before {
+	clip-path:circle( 400px at center );
+	background-color:rgba(255,255,255,0.5);
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.9);
+	border-top: 1px solid rgba(249,249,249,1);
+	border-left: 1px solid rgba(249,249,249,1);
+	
+}
+.gioithieu img {
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	transition: 1s;
+}
+.gioithieu:hover img {
+	left: 81%;
+	width: 60%;
+}
+.gioithieu .noidung {
+	position: relative;
+	width: 57%;
+	padding: 0px 30px 20px 40px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	
+}
+.gioithieu:hover .noidung {
+	left: 0;
+	opacity: 1;
+	visibility:visible;
+}
+.gioithieu h2 {
+	text-align: center;
+	font-family: 'Oleo Script', cursive;
+	font-size: 20pt;
+}
+.gioithieu h4 {
+	text-align: center;
+	margin: 3px;
+	font-size:11pt;
+	font-family: 'Poppins', sans-serif;
+}
+
+.gioithieu p {
+	margin-top: 13px;
+	text-align: center;
+	font-size: 10pt;
+	font-family: 'Poppins', sans-serif;
+}
+.gioithieu h5 {
+	font-family: 'Allura', cursive;
+	text-align: center;
+	font-size: 12pt;
+	font-weight:normal;
+}
+
+.gioithieu1 {
+	position: relative;
+	width: 570px;
+	height: 250px;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	transition: 1s;
+	margin-top: 20px;
+	margin-bottom: 70px;
+	backdrop-filter: blur(14px); 
+	
+}
+.gioithieu1 .hinhtron {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	overflow: hidden;
+	backdrop-filter: blur(14px);
+	
+	
+}
+.gioithieu1 .hinhtron::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(255,255,255,0.53);
+	clip-path: circle(100px at center);
+	transition: 1s;
+	box-shadow: 20px 10px 40px rgba(0,0,0,0.7);
+	backdrop-filter: blur(14px);
+	border-top: 1px solid rgba(249,249,249,1);
+	border-left: 1px solid rgba(249,249,249,1);
+}
+.gioithieu1:hover .hinhtron:before {
+	clip-path:circle( 400px at center );
+	background-color:rgba(255,255,255,0.5);
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.9);
+	border-top: 1px solid rgba(249,249,249,1);
+	border-left: 1px solid rgba(249,249,249,1);
+	
+}
+.gioithieu1 img {
+	position: absolute;
+	top: 51%;
+	left: 51%;
+	transform: translate(-53%, -59%);
+	pointer-events: none;
+	transition: 1s;
+}
+.gioithieu1:hover img {
+	left: 81%;
+	width: 30%;
+}
+.gioithieu1 .noidung {
+	position: relative;
+	width: 57%;
+	padding: 0px 30px 20px 40px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	
+}
+.gioithieu1:hover .noidung {
+	left: 0;
+	opacity: 1;
+	visibility:visible;
+}
+.gioithieu1 h2 {
+	text-align: center;
+	font-family: 'Oleo Script', cursive;
+	font-size: 20pt;
+}
+.gioithieu1 h4 {
+	text-align: center;
+	margin: 3px;
+	font-size:11pt;
+	font-family: 'Poppins', sans-serif;
+}
+
+.gioithieu1 p {
+	margin-top: 13px;
+	text-align: center;
+	font-size: 10pt;
+	font-family: 'Poppins', sans-serif;
+}
+.gioithieu1 h5 {
+	font-family: 'Allura', cursive;
+	text-align: center;
+	font-size: 12pt;
+	font-weight:normal;
+}
+
+.noidungchinh {
+	display: flex;
+	justify-content:space-around;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.phanskill {
+	margin-top: 70px;
+	perspective:1000px;
+	display: flex;
+	justify-content:space-around;
+	margin: 0 300px;
+	padding-bottom: 100px;
+	
+}
+.skill {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 1s;
+	transform-style:preserve-3d;
+	width: 100px;
+	height: 100px;
+}
+.skill .front {
+	border-radius: 13px;
+	border-left:solid rgba(238,238,238,0.86) 0.5px;
+	border-bottom:solid rgba(238,238,238,0.86) 0.5px;
+	box-sizing:border-box;
+	box-shadow: 10px 10px 80px rgba(29,29,27,0.3);
+	background-color:rgba(255,255,255,0.1);
+	background-size:cover;
+	text-align: center;
+	margin: 20px;
+	width: 100px;
+	height: 100px;
+	backdrop-filter: 12px;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	backface-visibility: hidden;
+	
+}
+.skill .back {
+	border-radius: 13px;
+	border-left:solid rgba(238,238,238,0.86) 0.5px;
+	border-left:solid rgba(238,238,238,0.86) 0.5px;
+	box-sizing:border-box;
+	box-shadow: 10px 10px 80px rgba(29,29,27,0.3);
+	background-color:rgba(255,255,255,0.1);
+	background-size:cover;
+	margin: 20px ;
+	width: 100px;
+	height: 100px;
+	backdrop-filter: 12px;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	transform:rotateY(180deg);
+	backface-visibility: hidden;
+}
+.phanskill:hover .skill {
+	transform:rotateY(-180deg);
+}
+.gioithieu1 .ndedu {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+	margin-top: 30px;
+}
+.ndedu ul h4 {
+	text-align: left;
+}
+
+.footer {
+	margin-top: 40px;
+	border-top: solid #521214 0.5px ;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom:20px;
+	display: flex;
+	justify-content:space-between;
+	color: #521214;
+	font-family: 'Poppins', sans-serif;
+	font-size: 10pt;
+	opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.nav .abc {
+		position: relative;
+	}
+	.nav img {
+		width: 17%;
+	}
+	.info {
+		display: none;
+	}
+	.gioithieu {
+		width: auto;
+		max-width: 350px;
+		align-items: flex-star;
+		margin-top: 70px;
+		margin-bottom: 0px;
+	}
+	.gioithieu:hover {
+		height: 600px;
+	}
+	.gioithieu .noidung {
+		width: 100%;
+		top: -25%;
+		left: 0;
+		padding: 30px;
+		text-align: center;
+		
+	}
+	.gioithieu:hover img {
+		top: 68%;
+		left: 50%;
+		width: 70%;
+		margin-top: 40px;
+	}
+	.noidungchinh {
+		display: block;
+		margin: 20px 0px;
+		
+	}
+	.gioithieu1 {
+		width: auto;
+		max-width: 350px;
+		align-items: flex-star;
+		margin-top: 70px;
+		margin-bottom: 40px;
+	}
+	.gioithieu1:hover {
+		height: 300px;
+	}
+	.gioithieu1 .noidung {
+		width: 100%;
+		top: -25%;
+		left: 0;
+		padding: 30px;
+		text-align: center;
+	}
+	.gioithieu1 .noidung h4 {
+		font-size: 10pt;
+		margin: 0;
+	}
+	
+	.gioithieu1:hover img {
+		top: 66%;
+		left: 50%;
+		width: 50%;
+		margin-top: 20px;
+	}
+	.phanskill {
+		display:flex;
+		justify-content: center;
+		margin: 0;
+	}
+	.skill {
+		padding: 0px;
+	}
+	.skill img {
+		width: 95%;
+	}
+	.skill .front {
+		width: 40px;
+		height: 40px;
+		border-radius: 5px;
+		position: relative;
+	}
+	.skill .back {
+		width: 40px;
+		height: 40px;
+		border-radius: 5px;
+		position: absolute;
+		top: 11px;
+		right: 1px;
+	}
+}

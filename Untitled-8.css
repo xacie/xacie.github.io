@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image:url("nathan-dumlao-ciO5L8pin8A-unsplash.jpg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.nav {
+	position: relative;
+	z-index: 2;
+}
+.nav h5 {
+	font-family: 'Prompt', sans-serif;
+	font-size: 11pt;
+	margin: 30px;
+	float: left;
+}
+.nav img {
+	float: right;
+	margin: 30px;
+}
+a {
+	text-decoration: none;
+	color: #e2dad4;
+}
+.hinh1 img {
+	background-color:rgba(23,23,23,1.00);
+	padding: 50px 40px;
+	margin-top: 200px;
+
+}
+.hinh1 {
+	display: flex;
+	justify-content:center;
+	margin-left: 300px;
+	margin-right: 300px;
+	z-index:-1;
+	opacity: 0.8;
+}
+.cot2 {
+	margin-top: 150px;
+}
+.cot3 {
+	position: absolute;
+	top:0;
+	left: -30px;
+	z-index:1;
+
+}
+.cot3 img {
+	background-color:rgba(23,23,23,1.00);
+	padding: 50px 40px;
+	margin-top: 100px;
+}
+.noidung {
+	position: relative;
+	padding-bottom: 200px;
+}
+.footer {
+	margin-top: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom:25px;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	color: #e2dad4;
+	font-family: 'Poppins', sans-serif;
+	font-size: 11pt;
+	border-top: solid #e2dad4 0.5px;
+}
+.footer h4 {
+	font-size: 13pt;
+}
+.footer h4:hover {
+	border: solid 1px #e2dad4;
+	padding: 1px 4px ;
+	border-radius: 10px;
+}
+.home {
+	text-decoration:underline;
+}

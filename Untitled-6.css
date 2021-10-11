@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("goran-guksic-xQxanCoq0aA-unsplash.jpg");
+	background-size: cover;
+}
+.nd {
+	background-color:rgba(245,245,245,0.4);
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
+	margin-right: 400px;
+	border-right: rgba(3,3,3,1.00) solid 0.5px;
+	backdrop-filter: blur(10px);
+	
+}
+.hinh {
+	border-bottom: rgba(3,3,3,1.00) solid 0.5px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	
+}
+.hinh h1 {
+	font-size: 45pt;
+	font-family: 'Oleo Script', cursive;
+	color: #521214;
+}
+.poster {
+	display:grid;
+	grid-template-columns: auto auto;
+	grid-gap: 50px;
+	margin: 30px 300px;
+}
+.nav h1 {
+	position: fixed;
+	top: 40%;
+	transform: translateY(-50%);
+	right: 0;
+	transform: rotate(90deg);
+	font-family: 'Prompt', sans-serif;
+	font-size: 60pt;
+	padding: 10px 0px 20px 0px;
+	color: #521214;
+}
+.nav h4 {
+	font-family: 'Prompt', sans-serif;
+	font-size: 11pt;
+	margin: 30px;
+	position: absolute;
+	right: 0;
+	
+}
+a {
+	text-decoration: none;
+	color: #521214;
+}
+.footer {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom:25px;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	color: #521214;
+	font-family: 'Poppins', sans-serif;
+	font-size: 11pt;
+}
+.footer h4 {
+	font-size: 13pt;
+}
+.footer h4:hover {
+	border: solid 1px #521214;
+	padding: 1px 4px ;
+	border-radius: 10px;
+}
+.home {
+	text-decoration:underline;
+}
+.hinh h4 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 9pt;
+}

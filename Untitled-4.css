@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("123.jpg") ;
+	background-size: cover;
+}
+
+.nav h4 {
+	font-family: 'Prompt', sans-serif;
+	font-size: 11pt;
+	margin: 30px;
+	float: left;
+}
+.nav img {
+	float: right;
+	margin: 30px;
+}
+
+.body {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	padding-top: 135px;
+}
+.noidung {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	flex-wrap:wrap;
+	z-index: 1;
+}
+.noidung .card {
+	position: relative;
+	width: 290px;
+	height: 450px;
+	margin: 50px;
+	box-shadow: 20px 20px 50px rgba(0,0,0,0.4);
+	border-radius: 15px;
+	background-color: rgba(255,255,255,0.1);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(255,255,255,0.4);
+	border-left: 1px solid rgba(255,255,255,0.4);
+	backdrop-filter: blur(5px);
+}
+.noidung .card .ndcard {
+	padding: 20px;
+	text-align: center;
+	transition: 0.5s;
+	transform: translateY(300px);
+	opacity: 0;
+	transition: 0.5s;
+}
+.noidung .card:hover .ndcard {
+	transform: translateY(0px);
+	opacity: 1;
+}
+.noidung .card .ndcard h2 {
+	position: relative;
+	top: 60px;
+	font-size: 22pt;
+    font-family: 'Prompt', sans-serif;
+	color: red;
+}
+
+.noidung .card .ndcard p {
+	font-size: 10pt;
+	color:rgba(0,0,0,1.00);
+	position: absolute;
+	top:-70px;
+	right: 0px;
+	font-family: 'Poppins', sans-serif;
+}
+ a {
+	text-decoration: none;
+	color: #521214;
+}
+.footer {
+	position: relative;
+	top: 155px;
+	border-top: solid #521214 0.5px ;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom:20px;
+	display: flex;
+	justify-content:space-between;
+	color: #521214;
+	font-family: 'Poppins', sans-serif;
+	font-size: 10pt;
+	opacity: 0.6;
+}
